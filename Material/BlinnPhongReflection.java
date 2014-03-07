@@ -7,7 +7,8 @@ import Color.*;
 import Vectormath.*;
 
 
-abstract public class BlinnPhongReflection extends ModelReflection {
+
+public class BlinnPhongReflection extends ModelReflection {
 	
 	public BlinnPhongReflection(
 			DiffuseReflection diffuseReflection,

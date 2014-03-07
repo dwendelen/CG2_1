@@ -295,5 +295,12 @@ public class Vector3 extends Object {
     return(result);
   }
 
+  public static Vector3 halfVector(Vector3 a, Vector3 b)
+  {
+	  Vector3 h = Vector3.add(a, b);
+	  h.normalize();
+	  
+	  return h;
+  }
 
 }
