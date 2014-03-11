@@ -5,8 +5,8 @@ import Mathtools.*;
 
 public class Settings extends Object {
 
-  final public static int IMAGE_WIDTH = 200;
-  final public static int IMAGE_HEIGHT = 200;
+  final public static int IMAGE_WIDTH = 700;
+  final public static int IMAGE_HEIGHT = 700;
 
   final public static RGBColor BACKGROUND_COLOR = new RGBColor(0.0,0.0,0.0); // if no object is found
  

@@ -34,7 +34,6 @@ public class AshikhminShirleyReflection extends ModelReflection {
 		
 		i = i*Math.pow(NdotH, n)/(VdotH * Math.max(NdotL, NdotV));
 		i = i*this.fresnel(VdotH);
-		
 		return i;
 	}
 	

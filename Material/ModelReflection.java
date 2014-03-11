@@ -26,7 +26,7 @@ abstract public class ModelReflection implements Reflection {
 		
 		RGBColor d = this.diffuseReflection.evaluate(inDirection, normal, outDirection);
 		RGBColor s = this.specularColour.scale(this.calculateSpecularScale(inDirection, normal, outDirection));
-	
+		
 		return RGBColor.add(d, s);
 	}
 	

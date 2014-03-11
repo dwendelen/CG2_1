@@ -25,8 +25,7 @@ public class BlinnPhongReflection extends ModelReflection {
 	{	
 		double cosAngle = Vector3.cosine(inDirection, outDirection);
 		double i = (n+2)/(2*Math.PI);
-		i = i * Math.pow(cosAngle, this.n);
-		
+		i = i * Math.pow(cosAngle, this.n);		
 		return i;
 	}
 }
