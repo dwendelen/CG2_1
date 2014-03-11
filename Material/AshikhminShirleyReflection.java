@@ -26,9 +26,13 @@ public class AshikhminShirleyReflection extends ModelReflection {
 	public double calculateSpecularScale(Vector3 inDirection,Vector3 normal,Vector3 outDirection)
 	{	
 		Vector3 H = Vector3.halfVector(inDirection, outDirection);
-		double VdotH = Vector3.dot(inDirection, outDirection);
+		inDirection = inDirection.scale(-1);
+		
+		double VdotH = Vector3.dot(outDirection, H);
+		
 		double NdotH = Vector3.dot(normal, H);
 		double NdotL = Vector3.dot(normal, inDirection);
+		
 		double NdotV = Vector3.dot(normal, outDirection);
 		double i = (n+1)/(8*Math.PI);
 		

@@ -28,9 +28,9 @@ public class RendProject extends Object {
         //======
         //======
         ModelReflection reflections[] = new ModelReflection[3];
-        reflections[0] = mf.createBPBrass();
-        reflections[1] = mf.createBPCherry235();
-        reflections[2] = mf.createBPOrangeBball();
+        reflections[0] = mf.createASBrass();
+        reflections[1] = mf.createASCherry235();
+        reflections[2] = mf.createASOrangeBball();
         
         Vector3[] positions = new Vector3[3];
         positions[0] = new Vector3(-0.7, -0.6, -0.6);
